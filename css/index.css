@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff2b34;
+    --black: #222;
+    --white: #fff;
+    --texto: 'Open Sans', sans-serif;
+}
+
+#home_banner {
+    background-image: linear-gradient(rgba(255, 43, 52, 0.89), rgba(255, 43, 52, 0.89)), url('../imagens/thoughtworks.jpg');
+    height: 90vh;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.home_titulo {
+    text-align: center;
+    color: white;
+    margin-top: 10em
+}
+
+.home_titulo h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 5em;
+    font-weight: normal;
+}
+
+.home_titulo hr {
+    background: white;
+    width: 30vw;
+    height: 0.5vh;
+    margin: 1em auto;
+    border: 0;
+}
+
+.home_titulo p {
+    font-size: 2em
+}
+
+.home_input {
+    margin-top: 8em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box select {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 12px;
+    width: 28em;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 5px;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input input {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 12px;
+    width: 28em;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/* .input:hover::before {
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.2);
+} */
