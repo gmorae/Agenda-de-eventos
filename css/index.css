@@ -107,7 +107,7 @@ h5 {
 .cat {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     margin-left: 0.5em;
-    margin-top: 6em;
+    /* margin-top: 6em; */
     width: 6em;
     height: 6em;
     border-radius: 5px;
