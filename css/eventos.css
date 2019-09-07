@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff2b34;
+    --black: #222;
+    --white: #fff;
+    --texto: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--texto)
+}
+
+a,
+p {
+    font-family: var(--texto)
+}
+
+#eventos {
+    display: flex;
+    justify-content: center
+}
+
+.container_eventos {
+    width: 90vw;
+    height: 70vh;
+}
+
+.container_eventos h1 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.card {
+    width: 25vw;
+    height: 35vh;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+    border-radius: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.calendario {
+    border: 1px solid var(--red);
+    width: 5em;
+    height: 4em;
+    margin-left: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.data {
+    font-size: 2em;
+    color: var(--red)
+}
