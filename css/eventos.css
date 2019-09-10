@@ -101,13 +101,18 @@ p {
 .titulo_card h2 {
     font-size: 20px;
     font-weight: lighter;
-    text-align: start
+    text-align: start;
+    color: var(--black);
 }
 
 .loc_eventos {
     margin-top: 5px;
     color: #bbb;
     font-size: 13px;
+}
+
+.conteudo a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 769px) {
