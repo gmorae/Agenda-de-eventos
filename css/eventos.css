@@ -51,31 +51,89 @@ p {
 
 .card {
     width: 25vw;
-    height: 35vh;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    height: 38vh;
     margin-bottom: 2em;
     border-radius: 10px;
-    /* display: flex;
-    flex-wrap: wrap; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    flex-wrap: wrap;
+    border-radius: 10px
+}
+
+.card_conteudo {
+    margin-left: 5px;
 }
 
 .calendario {
-    border: 1px solid var(--red);
-    width: 5em;
-    height: 4em;
-    margin-left: 5px;
+    width: 10em;
+    height: 2em;
+    margin-left: 2px;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center
 }
 
-.data {
-    font-size: 2em;
-    color: var(--red)
+.calendario p {
+    margin-left: 5px;
+    color: var(--red);
+    font-weight: 800;
+    font-size: 13px
+}
+
+.calendario span {
+    color: var(--black);
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: var(--texto)
+}
+
+.card_conteudo hr {
+    background: #eee;
+    width: 90%;
+    height: 1px;
+    margin: 5px;
+    margin-left: 1px;
+    border: 0;
+}
+
+.titulo_card h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: start;
+    color: var(--black);
+}
+
+.loc_eventos {
+    margin-top: 5px;
+    color: #bbb;
+    font-size: 13px;
+}
+
+.conteudo a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+    .conteudo {
+        flex-wrap: nowrap;
+        /* flex-direction: column; */
+        flex-wrap: wrap
+    }
+    .card {
+        width: 35vw;
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .conteudo {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .card {
+        width: 70vw;
+        height: 35vh;
+    }
 }

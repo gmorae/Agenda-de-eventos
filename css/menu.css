@@ -58,7 +58,7 @@
 }
 
 .botao {
-    background: var(--black);
+    background: var(--red);
     border-radius: 15px;
     padding: 20px 15px;
 }
