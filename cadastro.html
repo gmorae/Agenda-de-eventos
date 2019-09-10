@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro | easy talk</title>
     <link rel="stylesheet" href="css/menuOutros.css">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/86d4fe3a19.js"></script>
 
 </head>
@@ -36,18 +36,26 @@
         </nav>
     </header>
     <main>
-        <section id="senha">
-            <div class="quadrado_vermelho">
-                <div class="quadrado_branco">
+        <section id="cadastro">
+            <div class="cadastro_quadrado_vermelho">
+                <div class="cadastro_quadrado_branco">
                     <h1>Cadastre-se</h1>
                     <form method="post">
-                        <div class="center">
-                            <input type="text" name="nome" placeholder="Nome Completo">
-                            <input type="email" name="email" placeholder="E-mail">
-                            <input type="password" name="senha" placeholder="Senha">
-                            <button class="redeSocial"><i class="fab fa-facebook-square"></i> | Cadastre-se com o facebook</button>
-                            <button class="redeSocial"><i class="fab fa-google-plus-g"></i> | Cadastre-se com o Google</button>
-                            <button class="button">Entrar</button>
+                        <div class="cadastro_center">
+                            <input class="cadastro_input" type="text" name="nome" placeholder="Nome Completo">
+                            <input class="cadastro_input" type="email" name="email" placeholder="E-mail">
+                            <input class="cadastro_input" type="password" name="senha" placeholder="Senha">
+                            <input class="cadastro_input" type="password" name="confirm_senha" placeholder="Confirmar Senha">
+                            <input class="cadastro_input" type="text" name="numero" placeholder="Celular">
+                            <button class="cadastro_redeSocial"><i class="fab fa-facebook-square"></i> | Cadastre-se com
+                                o facebook</button>
+                            <button class="cadastro_redeSocial"><i class="fab fa-google-plus-g"></i> | Cadastre-se com o
+                                Google</button>
+                            <div class="cadastro_icone_redeSocial">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                            <button class="cadastro_button">Cadsatrar</button>
                         </div>
                     </form>
                 </div>
