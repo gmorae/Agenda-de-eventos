@@ -31,6 +31,16 @@ h5 {
 /* Fim das configurações padrões */
 
 
+/* Configuração menu web  */
+
+.menu_mobile {
+    display: none
+}
+
+
+/* Fim da configuração */
+
+
 /* Página inicial */
 
 #home_banner {
@@ -1034,6 +1044,12 @@ main {
 /* Responsivo mobile */
 
 @media screen and (max-width: 376px) {
+    .menu_mobile {
+        display: block;
+    }
+    #topo_web {
+        display: none;
+    }
     #home_banner {
         height: 100vh;
     }
@@ -1122,10 +1138,11 @@ main {
     }
     .cadastro_quadrado_branco {
         width: 85%;
-        height: 100vh;
+        height: 105vh;
+        margin-top: 5em;
     }
     .cadastro_quadrado_vermelho {
-        height: 30vh;
+        height: 65vh;
     }
     .cadastro_button {
         width: 30%;
@@ -1140,9 +1157,10 @@ main {
     .login_quadrado_branco {
         width: 85%;
         height: 75vh;
+        margin-top: 5em
     }
     .login_quadrado_vermelho {
-        height: 30vh;
+        height: 65vh;
     }
     .login_mt-3 {
         margin-top: 1em
@@ -1157,9 +1175,10 @@ main {
     .esqueceuSenha_quadrado_branco {
         width: 85%;
         height: 60vh;
+        margin-top: 5em;
     }
-    .esqeuceuSenha_quadrado_vermelho {
-        height: 30vh;
+    .esqueceuSenha_quadrado_vermelho {
+        height: 65vh;
     }
 }
 
