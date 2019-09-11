@@ -134,10 +134,14 @@ h5 {
     font-weight: lighter;
 }
 
-.fa-utensils {
+.home_cat i {
     font-size: 2em;
     margin-top: 0.3em;
     padding: 0.3em 0;
+}
+
+.home_none_tablet {
+    display: none
 }
 
 .home_cat p {
@@ -1046,6 +1050,9 @@ main {
         width: 20%;
         margin: 0;
     }
+    footer {
+        display: none
+    }
 }
 
 
@@ -1055,6 +1062,9 @@ main {
 /* Responsivo mobile */
 
 @media screen and (max-width: 376px) {
+    footer {
+        display: none
+    }
     .logo {
         width: 45%;
         margin: 0;
