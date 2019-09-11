@@ -1211,6 +1211,9 @@ main {
     .esqueceuSenha_quadrado_vermelho {
         height: 65vh;
     }
+    .web {
+        display: none
+    }
 }
 
 
