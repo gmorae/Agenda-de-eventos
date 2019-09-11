@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff2b34;
+    --black: #222;
+    --white: #fff;
+    --texto: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--texto)
+}
+
+a,
+p {
+    font-family: var(--texto)
+}
+
+.detalhe_evento_banner_fundo {
+    background: url("../imagens/thoughtworks.jpg") no-repeat center center;
+    width: 100%;
+    height: 60vh;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(2px);
+}
+
+.detalhe_evento_banner img {
+    width: 50%;
+    height: 50vh;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    border-radius: 20px;
+}

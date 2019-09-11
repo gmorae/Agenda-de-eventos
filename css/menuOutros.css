@@ -83,27 +83,14 @@
         display: block;
         font-size: 1.5em;
     }
-}
+} */
 
 @media screen and (max-width: 376px) {
-    h2 {
-        text-align: center;
-    }
-    .menu ul a {
-        padding: 1.75em 1.17em
-    }
-    .box {
-        width: 50vw;
-    }
-    .menu ul {
-        display: none
-    }
     .icon {
         display: block;
         font-size: 1.2em;
     }
     .logo {
-        width: 80%;
-        margin-top: 1em;
+        margin: 0
     }
-} */
+}

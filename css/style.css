@@ -413,7 +413,7 @@ main {
 
 /* Página da galeria */
 
-#galeria h1 {
+.gal_container h1 {
     text-align: center;
     margin: 2em 0;
     font-size: 2em;
@@ -601,7 +601,8 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 2em;
+    margin: auto;
+    margin-top: 2em
 }
 
 .eventos_card {
@@ -617,7 +618,7 @@ main {
     border-radius: 10px
 }
 
-.eventos_eventos_ {
+.eventos_eventos_conteudo {
     margin-left: 5px;
 }
 
@@ -1035,6 +1036,16 @@ main {
     .esqueceuSenha_button {
         margin-top: 1em;
     }
+    .menu_mobile {
+        display: block;
+    }
+    #topo_web {
+        display: none;
+    }
+    .logo {
+        width: 20%;
+        margin: 0;
+    }
 }
 
 
@@ -1044,6 +1055,10 @@ main {
 /* Responsivo mobile */
 
 @media screen and (max-width: 376px) {
+    .logo {
+        width: 45%;
+        margin: 0;
+    }
     .menu_mobile {
         display: block;
     }
@@ -1146,6 +1161,12 @@ main {
     }
     .cadastro_button {
         width: 30%;
+    }
+    .cadastro_icone_redeSocial {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        margin-bottom: 1em;
     }
     .login_input {
         width: 13em;

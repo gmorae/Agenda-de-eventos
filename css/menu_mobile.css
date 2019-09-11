@@ -33,6 +33,12 @@ h5 {
     background: var(--red);
 }
 
+#topo_mobile_red {
+    width: 100%;
+    height: 12vh;
+    background: var(--red);
+}
+
 #topo_mobile_home {
     width: 100%;
     height: 0vh;
@@ -44,9 +50,10 @@ h5 {
 
 #icone {
     cursor: pointer;
-    padding: 15px;
+    padding: 22px;
     position: absolute;
     z-index: 1;
+    right: 0;
 }
 
 .fa-bars {
@@ -58,10 +65,11 @@ h5 {
 .barra {
     background-color: var(--black);
     height: 100%;
-    width: 300px;
+    width: 80%;
     position: absolute;
     transition: all .2s linear;
     left: -300px;
+    /* right: -80%; */
 }
 
 .barra nav {
@@ -86,9 +94,21 @@ h5 {
 
 .link:hover {
     background-color: #fff;
-    color: #D45257;
+    color: var(--black);
 }
 
 #check:checked~.barra {
     transform: translateX(300px);
+}
+
+@media screen and (max-width: 769px) {
+    .barra {
+        width: 35%
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .barra {
+        width: 80%;
+    }
 }
