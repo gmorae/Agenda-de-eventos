@@ -14,15 +14,22 @@
     --texto: 'Open Sans', sans-serif;
 }
 
-a, p {
+a,
+p {
     font-family: var(--texto)
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--texto);
 }
 
+
 /* Fim das configurações padrões */
+
 
 /* Configuração menu web  */
 
@@ -30,7 +37,9 @@ h1, h2, h3, h4, h5 {
     display: none
 }
 
+
 /* Fim da configuração */
+
 
 /* Página inicial */
 
@@ -402,7 +411,9 @@ main {
     margin-bottom: 1em;
 }
 
+
 /* Fim da página inicial */
+
 
 /* Página da galeria */
 
@@ -568,7 +579,9 @@ main {
     }
 }
 
+
 /* Fim da página da galeria */
+
 
 /* Começo da página de eventos */
 
@@ -667,7 +680,9 @@ main {
     text-decoration: none;
 }
 
+
 /* Fim da página de eventos */
+
 
 /* Página de cadastro */
 
@@ -754,7 +769,9 @@ main {
     display: none;
 }
 
+
 /* Fim da página de cadastro */
+
 
 /* Começo da página de login */
 
@@ -846,7 +863,9 @@ main {
     margin-top: 5em
 }
 
+
 /* Fim da página de login */
+
 
 /* Página de esqueceu a senha */
 
@@ -913,7 +932,9 @@ main {
     flex-direction: column;
 }
 
+
 /* Fim da página de esqueceu a senha */
+
 
 /* Pagina de detalhe de eventos */
 
@@ -964,7 +985,9 @@ main {
     margin-top: 1em;
 }
 
+
 /* Fim da  página de detalhe de eventos  */
+
 
 /* Página de editar dados pessoais do usuario */
 
@@ -1061,11 +1084,206 @@ main {
     height: 2vh;
 }
 
+
 /* Fim da página de editar dados pessoais do usuario  */
+
+
+/* Página de eventos rejeitados */
+
+
+/* título "Eventos Rejeitados*/
+
+.rejeitado_texto h1 {
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-family: var(--texto);
+    text-align: center
+}
+
+
+/* fim do título */
+
+
+/* edição do h2 */
+
+.cardseventosrejeitados-mudarposicao h2 {
+    text-transform: uppercase;
+    margin-top: 3em;
+    font-family: var(--texto);
+    text-align: center
+}
+
+
+/* fim edição h2 */
+
+
+/* div pai */
+
+.cardseventosrejeitados-mudarposicao {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em
+}
+
+
+/* fim div pai */
+
+
+/* div pai dos cards de cima */
+
+.cardseventosrejeitados-partedecima {
+    width: 90vw;
+    height: 60vh;
+    margin-bottom: 1em;
+    justify-content: space-around;
+}
+
+
+/* fim div pai cards de cima */
+
+
+/* divs do primeiro pai*/
+
+.cardseventosrejeitados {
+    width: 20vw;
+    height: 60vh;
+    background-color: #fafdff;
+    border-radius: 1em;
+    box-shadow: 0.1em 0.1em 0.05em #222
+}
+
+
+/* fim divs do segundo pai */
+
+
+/* edição das imagens nas divs */
+
+.imagemcard {
+    width: 20vw;
+    height: 30vh;
+    border-radius: 1em;
+}
+
+
+/* fim edição das imagens nas divs */
+
+
+/* essa é a parte dos buttons */
+
+.button {
+    display: inline-block;
+    border-radius: 0.5em;
+    background-color: var(--red);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.75em;
+    width: 10vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+    margin-top: 3em;
+    margin-left: 4.5em;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* Fim da página de eventos rejeitados */
+
+
+/* Página de lista de usuarios com eventos  */
+
+.table_h2 h2 {
+    margin-top: 10em;
+    text-align: center;
+    font-size: 15pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    padding: 2em 0;
+    font-family: 'Open Sans';
+}
+
+
+/* Table Styles */
+
+.table-wrapper {
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2);
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+
+/* Fim Página de lista de usuarios com eventos  */
+
 
 /* Responsivo tablet */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     #home_banner {
         height: 100vh;
     }
@@ -1217,12 +1435,78 @@ main {
     }
     .detalhe_eventos__filhoBanner img {
         border-radius: 0;
-        z-index: 0;
+        z-index: 1;
         position: initial;
+    }
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead,
+    .fl-table tbody,
+    .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child {
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td,
+    .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
     }
 }
 
+
 /* Fim do responsivo tablet */
+
 
 /* Responsivo mobile */
 
@@ -1399,12 +1683,12 @@ main {
         width: 70%;
         height: 275px;
     }
-
     .detalhe_eventos__filhoBanner img {
         border-radius: 0;
         z-index: 0;
         position: initial;
     }
 }
+
 
 /* Fim do mobile */
