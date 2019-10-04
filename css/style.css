@@ -930,6 +930,97 @@ main {
 
 /* Fim da página de esqueceu a senha */
 
+/* Pagina de detalhe de eventos */
+
+/* Fim da  página de detalhe de eventos  */
+
+/* Página de editar dados pessoais do usuario */
+
+.pedp-editar-quadrado-vermelho {
+    background: var(--red);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.pedp-editar-quadrado-branco {
+    background: var(--white);
+    width: 100%;
+    height: 30vh; 
+}
+.pedp-editar_div_center h1 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.pedp-editar_div_center {
+    background: var(--white);
+    margin-top: 1.5em;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 7px #00000080;
+    border-radius: 15px; 
+}
+.editar_center_campos {
+    display: flex;
+    margin: 0 1em;
+}
+.editar_center {
+    display: flex;
+    flex-direction: column;
+}
+.editar_input {
+    margin: 0.5em;
+    width: 25vw;
+    height: 5vh;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0.5em;
+    font-size: 1.05em;
+    box-shadow: 0 0 7px #00000080;
+    outline: none; 
+    border: none;
+    border-radius: 7px;
+}
+.largura-nome {
+    width: 51vw;
+}
+.editar_button {
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    padding: 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 35vw;
+    font-weight: bold; 
+}
+.black-1{
+    background: #000000;
+    width: 100%;
+    height: 3vh; 
+}
+.black-2{
+    background: #2b2525ea;
+    width: 100%;
+    height: 5vh; 
+}
+.black-3{
+    background: #2b2020;
+    width: 100%;
+    height: 2vh; 
+}
+
+/* Fim da página de editar dados pessoais do usuario  */
+
+
 
 /* Responsivo tablet */
 
@@ -1052,6 +1143,20 @@ main {
     }
     footer {
         display: none
+    }
+
+    .largura-nome{
+        width: 75vw;
+    }
+    .pedp-editar_div_center h1 {
+        font-size: 1.7em;
+    }
+    .pedp-editar_div_center{
+        width: 85vw;
+        height: 60vh;
+    }
+    .editar_button{
+        width: 60vw;
     }
 }
 
@@ -1214,6 +1319,10 @@ main {
     .web {
         display: none
     }
+
+    .pedp-editar_div_center h1 {
+        font-size: 1.7em;
+        }
 }
 
 

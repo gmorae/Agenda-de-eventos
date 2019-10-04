@@ -27,21 +27,10 @@ h5 {
     font-family: var(--texto);
 }
 
-#topo_mobile {
-    width: 100%;
-    /* height: 15vh; */
-    background: var(--red);
-}
-
-#topo_mobile_red {
-    width: 100%;
-    height: 12vh;
-    background: var(--red);
-}
-
 #topo_mobile_home {
     width: 100%;
-    height: 0vh;
+    height: 12vh;
+    background: #ff2b34
 }
 
 #check {
@@ -50,10 +39,22 @@ h5 {
 
 #icone {
     cursor: pointer;
-    padding: 22px;
     position: absolute;
     z-index: 1;
-    right: 0;
+    margin-left: 0.5em;
+    margin-top: 1.7em
+}
+
+#topo_mobile_home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-left: 0.5em */
+}
+
+#topo_mobile_home h2 {
+    margin-right: 0.5em;
+    color: #fff
 }
 
 .fa-bars {
@@ -65,7 +66,7 @@ h5 {
 .barra {
     background-color: var(--black);
     height: 100%;
-    width: 80%;
+    width: 300px;
     position: absolute;
     transition: all .2s linear;
     left: -300px;
@@ -105,10 +106,18 @@ h5 {
     .barra {
         width: 35%
     }
+    #icone {
+        margin-top: 1.5em;
+        margin-left: 0.5em
+    }
 }
 
 @media screen and (max-width: 376px) {
     .barra {
         width: 80%;
+    }
+    #icone {
+        margin-top: 1.5em;
+        margin-left: 0.5em
     }
 }
