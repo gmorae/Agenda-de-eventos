@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Detalhe do evento | Easy Talk</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menuOutros.css">
-    <link rel="stylesheet" href="css/detalheEvento.css">
+    <link rel="stylesheet" href="css/menu_mobile.css">
+    <title>Detalhe Evento | Easy Talk</title>
+    <script src="https://kit.fontawesome.com/86d4fe3a19.js"></script>
 </head>
 
 <body>
-
-    <header id="topo">
+    <header id="topo_web">
         <nav class="menu flex">
             <a href="index.html">
                 <img class="logo" src="imagens/logo.png" alt="Logo da empresa">
             </a>
             <ul class="flex">
-                <li><a class="teste " href="index.html ">Home</a></li>
-                <li><a class="teste " href="galeria.html ">Galeria</a></li>
-                <li><a class="teste " href="eventos.html ">Eventos</a></li>
-                <li><a class="teste " href="cadastro.html ">Cadatre-se</a>
+                <li><a class="teste" href="index.html ">Home</a></li>
+                <li><a class="teste" href="galeria.html ">Galeria</a></li>
+                <li><a class="teste" href=" eventos.html ">Eventos</a></li>
+                <li><a class="teste" href="cadastro.html ">Cadastre-se</a>
                 </li>
             </ul>
             <ul>
@@ -29,27 +30,72 @@
             </ul>
             <div class="icon ">
                 <a href="# ">
-                    <i class="fas fa-bars icon"></i>
+                    <i class="fas fa-bars"></i>
                 </a>
             </div>
         </nav>
     </header>
+    <div class="menu_mobile">
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"><i class="fas fa-bars icon "></i></label>
+
+        <header id="topo_mobile_red">
+            <a href="index.html">
+                <img class="logo" src="imagens/logo.png" alt="Logo da empresa">
+            </a>
+        </header>
+
+        <div class="barra">
+            <nav>
+                <a href="index.html">
+                    <div class="link">Home</div>
+                </a>
+                <a href="galeria.html">
+                    <div class="link">Galeria</div>
+                </a>
+                <a href="eventos.html">
+                    <div class="link">Eventos</div>
+                </a>
+                <a href="cadastro.html">
+                    <div class="link">Cadastre-se</div>
+                </a>
+                <a href="login.html">
+                    <div class="link">Login</div>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <section id="detalhe_eventos__banner">
+        <div class="detalhe_eventos__paiBanner">
+            <img src="imagens/evento.png " alt="">
+        </div>
+        <div class="detalhe_eventos__filho">
+            <div class="detalhe_eventos__filhoBanner">
+                <img src="imagens/evento.png " alt="">
+            </div>
+        </div>
+    </section>
     <main>
-        <section id="detalheEvento">
-            <div class="banner_datalhe_evento">
-                <div class="detalhe_evento_banner_fundo">
-                </div>
-                <div class="detalhe_evento_banner">
-                    <img src="imagens/thoughtworks.jpg" alt="">
+        <section id="detalhe_eventos__conteudo">
+            <div class>
+                <h1>Nome dos Eventos</h1>
+                <div class="detalhe_enventos__infoPai">
+                    <div class="detalhe_eventos__info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Rua Barão de Limeira, Nº123</p>
+                    </div>
+                    <div class="detalhe_eventos__info">
+                        <i class="fas fa-clock"></i>
+                        <p>21 de setembro de 2019, 10h-12h</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="detalhe_evento_conteudo">
-
-                <div class="detalhe_evento_titulo">
-
-                </div>
+            <!-- <div class="linha"></div>
+            <div class="Texto">
+                <h1>segundo texto</h1>
+                Lorem ipsum dolor, sit amet consectetur -->
             </div>
+
         </section>
     </main>
 </body>

@@ -14,22 +14,15 @@
     --texto: 'Open Sans', sans-serif;
 }
 
-a,
-p {
+a, p {
     font-family: var(--texto)
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     font-family: var(--texto);
 }
 
-
 /* Fim das configurações padrões */
-
 
 /* Configuração menu web  */
 
@@ -37,9 +30,7 @@ h5 {
     display: none
 }
 
-
 /* Fim da configuração */
-
 
 /* Página inicial */
 
@@ -411,9 +402,7 @@ main {
     margin-bottom: 1em;
 }
 
-
 /* Fim da página inicial */
-
 
 /* Página da galeria */
 
@@ -579,9 +568,7 @@ main {
     }
 }
 
-
 /* Fim da página da galeria */
-
 
 /* Começo da página de eventos */
 
@@ -611,7 +598,7 @@ main {
 
 .eventos_card {
     width: 25vw;
-    height: 38vh;
+    height: 42vh;
     margin-bottom: 2em;
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -619,7 +606,8 @@ main {
 
 .eventos_card img {
     width: 100%;
-    border-radius: 10px
+    border-radius: 10px;
+    height: 25vh;
 }
 
 .eventos_eventos_conteudo {
@@ -632,7 +620,8 @@ main {
     margin-left: 2px;
     border-radius: 10px;
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-left: 5px;
 }
 
 .eventos_calendario p {
@@ -656,6 +645,7 @@ main {
     margin: 5px;
     margin-left: 1px;
     border: 0;
+    padding-left: 10px;
 }
 
 .eventos_titulo_card h2 {
@@ -663,21 +653,21 @@ main {
     font-weight: lighter;
     text-align: start;
     color: var(--black);
+    padding-left: 5px;
 }
 
 .eventos_loc_eventos {
     margin-top: 5px;
     color: #bbb;
     font-size: 13px;
+    padding-left: 5px;
 }
 
 .eventos_conteudo a {
     text-decoration: none;
 }
 
-
 /* Fim da página de eventos */
-
 
 /* Página de cadastro */
 
@@ -764,9 +754,7 @@ main {
     display: none;
 }
 
-
 /* Fim da página de cadastro */
-
 
 /* Começo da página de login */
 
@@ -858,9 +846,7 @@ main {
     margin-top: 5em
 }
 
-
 /* Fim da página de login */
-
 
 /* Página de esqueceu a senha */
 
@@ -927,10 +913,56 @@ main {
     flex-direction: column;
 }
 
-
 /* Fim da página de esqueceu a senha */
 
 /* Pagina de detalhe de eventos */
+
+.detalhe_eventos__paiBanner img {
+    width: 100%;
+    height: 500px;
+    filter: blur(10px);
+    position: absolute;
+    z-index: 1;
+}
+
+.detalhe_eventos__filhoBanner {
+    width: 70%;
+    height: 500px;
+}
+
+.detalhe_eventos__filhoBanner img {
+    width: 70%;
+}
+
+#detalhe_eventos__conteudo {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    margin-top: 10em;
+}
+
+#detalhe_eventos__conteudo i {
+    width: 30px;
+    height: 30px;
+    right: 284px;
+}
+
+.detalhe_eventos__filho {
+    display: flex;
+    justify-content: center;
+}
+
+.detalhe_eventos__filhoBanner img {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.detalhe_eventos__info {
+    display: flex;
+    margin-top: 1em;
+}
 
 /* Fim da  página de detalhe de eventos  */
 
@@ -943,11 +975,13 @@ main {
     display: flex;
     justify-content: center;
 }
+
 .pedp-editar-quadrado-branco {
     background: var(--white);
     width: 100%;
-    height: 30vh; 
+    height: 30vh;
 }
+
 .pedp-editar_div_center h1 {
     margin-top: 1em;
     text-align: center;
@@ -955,6 +989,7 @@ main {
     font-weight: bold;
     margin-bottom: 0.5em;
 }
+
 .pedp-editar_div_center {
     background: var(--white);
     margin-top: 1.5em;
@@ -963,16 +998,19 @@ main {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 7px #00000080;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
+
 .editar_center_campos {
     display: flex;
     margin: 0 1em;
 }
+
 .editar_center {
     display: flex;
     flex-direction: column;
 }
+
 .editar_input {
     margin: 0.5em;
     width: 25vw;
@@ -982,13 +1020,15 @@ main {
     padding: 0.5em;
     font-size: 1.05em;
     box-shadow: 0 0 7px #00000080;
-    outline: none; 
+    outline: none;
     border: none;
     border-radius: 7px;
 }
+
 .largura-nome {
     width: 51vw;
 }
+
 .editar_button {
     background-color: var(--red);
     border: none;
@@ -1000,27 +1040,28 @@ main {
     margin: 0 auto;
     margin-top: 3em;
     width: 35vw;
-    font-weight: bold; 
+    font-weight: bold;
 }
-.black-1{
+
+.black-1 {
     background: #000000;
     width: 100%;
-    height: 3vh; 
+    height: 3vh;
 }
-.black-2{
+
+.black-2 {
     background: #2b2525ea;
     width: 100%;
-    height: 5vh; 
+    height: 5vh;
 }
-.black-3{
+
+.black-3 {
     background: #2b2020;
     width: 100%;
-    height: 2vh; 
+    height: 2vh;
 }
 
 /* Fim da página de editar dados pessoais do usuario  */
-
-
 
 /* Responsivo tablet */
 
@@ -1114,7 +1155,7 @@ main {
     }
     .eventos_card {
         width: 35vw;
-        height: 35vh;
+        height: 45vh;
     }
     .login_input {
         width: 15em;
@@ -1144,25 +1185,44 @@ main {
     footer {
         display: none
     }
-
-    .largura-nome{
+    .largura-nome {
         width: 75vw;
     }
     .pedp-editar_div_center h1 {
         font-size: 1.7em;
     }
-    .pedp-editar_div_center{
+    .pedp-editar_div_center {
         width: 85vw;
         height: 60vh;
     }
-    .editar_button{
+    .editar_button {
         width: 60vw;
+    }
+    .detalhe_eventos__paiBanner {
+        display: none
+    }
+    .detalhe_eventos__filhoBanner img {
+        width: 143%;
+    }
+    .detalhe_eventos__filho {
+        justify-content: end
+    }
+    #detalhe_eventos__conteudo {
+        height: 0;
+        margin-top: 0;
+    }
+    .detalhe_eventos__filhoBanner {
+        width: 70%;
+        height: 467px;
+    }
+    .detalhe_eventos__filhoBanner img {
+        border-radius: 0;
+        z-index: 0;
+        position: initial;
     }
 }
 
-
 /* Fim do responsivo tablet */
-
 
 /* Responsivo mobile */
 
@@ -1213,7 +1273,7 @@ main {
         margin-bottom: 1em;
     }
     .home_categoria_banner {
-        flex-wrap: wrap;
+        display: none
     }
     .home_none {
         display: none;
@@ -1256,8 +1316,8 @@ main {
         flex-direction: column;
     }
     .eventos_card {
-        width: 70vw;
-        height: 35vh;
+        width: 80vw;
+        height: 45vh;
     }
     .cadastro_input {
         width: 13em;
@@ -1319,11 +1379,32 @@ main {
     .web {
         display: none
     }
-
     .pedp-editar_div_center h1 {
         font-size: 1.7em;
-        }
-}
+    }
+    .detalhe_eventos__paiBanner {
+        display: none
+    }
+    .detalhe_eventos__filhoBanner img {
+        width: 143%;
+    }
+    .detalhe_eventos__filho {
+        justify-content: end
+    }
+    #detalhe_eventos__conteudo {
+        height: 0;
+        margin-top: 0;
+    }
+    .detalhe_eventos__filhoBanner {
+        width: 70%;
+        height: 275px;
+    }
 
+    .detalhe_eventos__filhoBanner img {
+        border-radius: 0;
+        z-index: 0;
+        position: initial;
+    }
+}
 
 /* Fim do mobile */
